@@ -9,11 +9,11 @@ export default function Gifts() {
   return (
     <section id="gifts" className="gifts chapter">
       <div className="sheet gifts-sheet">
-        <div className="gift-flowers" aria-hidden="true">
-          <img className="mirror" src="/art/bouquet.png" alt="" width="261" height="279" />
-          <img src="/art/bouquet.png" alt="" width="261" height="279" />
+        <div className="gift-head">
+          <img className="gift-flower" src="/art/gift-flower-left.png" alt="" width="218" height="259" />
+          <h2 className="section-title rise">هدايا صغيرة، وذكريات تدوم</h2>
+          <img className="gift-flower" src="/art/gift-flower-right.png" alt="" width="221" height="260" />
         </div>
-        <h2 className="section-title rise">هدايا صغيرة، وذكريات تدوم</h2>
         <p className="gift-lead rise" style={{ '--d': '80ms' }}>
           وجودكم بيننا هو أجمل هدية، وفرحتكم بقدوم لورا تكفينا.
         </p>

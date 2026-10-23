@@ -31,7 +31,6 @@ export default function Details() {
           <h2 className="section-title rise">تفاصيل احتفالنا بأميرتنا الصغيرة</h2>
 
           <div className="when-row rise" style={{ '--d': '120ms' }}>
-            <img className="rings-side" src="/art/rings.png" alt="" width="282" height="269" />
             <ol className="when">
               <li>
                 <span className="when-icon"><CalendarIcon /></span>
@@ -48,10 +47,10 @@ export default function Details() {
             </ol>
           </div>
         </div>
+        <img className="rings-side" src="/art/rings.png" alt="" width="282" height="269" />
       </div>
 
       <div className="memories">
-        <img className="mem-elephant" src="/art/elephant.png" alt="" width="154" height="199" />
         <img className="mem-flower mem-flower-top" src="/art/bouquet.png" alt="" width="261" height="279" />
         <div className="memories-copy">
           <h2 className="memories-title rise">تفاصيل صغيرة ، وذكريات كبيرة</h2>
@@ -69,12 +68,10 @@ export default function Details() {
               )
             })}
           </ul>
-        </div>
-        <div className="memories-foot">
-          <img className="mem-flower mem-flower-bottom" src="/art/bouquet.png" alt="" width="261" height="279" />
           <p className="memory-close rise">وجودكم هو أجمل ما يزين فرحتنا !</p>
-          <img className="giraffe" src="/art/giraffe.png" alt="" width="221" height="325" />
         </div>
+        <img className="mem-flower mem-flower-bottom" src="/art/bouquet.png" alt="" width="261" height="279" />
+        <img className="giraffe" src="/art/giraffe.png" alt="" width="221" height="325" />
       </div>
     </section>
   )
