@@ -346,6 +346,58 @@ body {
   justify-content: center;
 }
 
+.toy-link {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  animation: float-y 6.5s ease-in-out infinite;
+}
+
+.toy-link:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.toy-label {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  color: #3c322e;
+  font-family: var(--serif);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.toy-link.outfit {
+  flex-direction: column;
+  align-items: center;
+}
+
+.toy-label.on-stroller {
+  top: 39%;
+  left: 24%;
+  width: 54%;
+  font-size: clamp(10px, 2.2vw, 13px);
+}
+
+.toy-label.on-outfit {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  width: 8.2em;
+  margin-top: 2px;
+  font-size: clamp(11px, 2.3vw, 13px);
+}
+
+.toy-label.on-details {
+  top: 68%;
+  left: 61%;
+  width: 36%;
+  font-size: clamp(9px, 1.9vw, 12px);
+}
+
 .outfit-slot {
   align-self: center;
 }
@@ -356,13 +408,11 @@ body {
   animation: float-y 6.5s ease-in-out infinite;
 }
 
-.toy.stroller { animation-duration: 7.2s; }
-.toy.outfit {
-  width: 84%;
-  animation-duration: 5.8s;
-  animation-delay: -1.2s;
-}
-.toy.rings { animation-duration: 6.8s; animation-delay: -2s; }
+.toy-link.stroller { animation-duration: 7.2s; }
+.toy-link.outfit { animation-duration: 5.8s; animation-delay: -1.2s; }
+.toy-link.rings { animation-duration: 6.8s; animation-delay: -2s; }
+.toy-link .toy { animation: none; }
+.toy.outfit { width: 84%; }
 
 .countdown {
   width: min(540px, calc(100% - 28px));
@@ -414,6 +464,7 @@ body {
 .details {
   position: relative;
   background: var(--cream);
+  scroll-margin-top: 16px;
 }
 
 .details-cream {
@@ -637,6 +688,7 @@ body {
   background: var(--cream);
   overflow: hidden;
   padding: 36px 0 64px;
+  scroll-margin-top: 16px;
 }
 
 .gifts-sheet {
@@ -709,6 +761,7 @@ body {
 .rsvp {
   background: var(--cream);
   padding: 0 0 20px;
+  scroll-margin-top: 16px;
 }
 
 .rsvp-sheet {
@@ -900,6 +953,7 @@ body {
 
   .envelope-float,
   .toy,
+  .toy-link,
   .vinyl,
   .vinyl img,
   .rings-side,
