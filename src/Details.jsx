@@ -1,5 +1,5 @@
 import { CalendarIcon, CameraIcon, ClockIcon, PinIcon, SparkIcon } from './icons'
-import { EVENT } from './event'
+import { getInvite } from './event'
 
 const MEMORIES = [
   {
@@ -20,15 +20,12 @@ const MEMORIES = [
 ]
 
 export default function Details() {
+  const invite = getInvite()
+
   return (
     <section id="details" className="details chapter">
       <div className="details-cream">
-        <span className="pampas-slot pampas-slot-top" aria-hidden="true">
-          <img className="pampas" src="/art/pampas-b.png" alt="" width="320" height="365" />
-        </span>
-        <span className="pampas-slot pampas-slot-bottom" aria-hidden="true">
-          <img className="pampas" src="/art/pampas-a.png" alt="" width="320" height="365" />
-        </span>
+        <img className="details-paper" src="/art/details-paper.png" alt="" width="1024" height="703" />
 
         <div className="sheet details-sheet">
           <h2 className="section-title rise">تفاصيل احتفالنا بأميرتنا الصغيرة</h2>
@@ -38,15 +35,15 @@ export default function Details() {
             <ol className="when">
               <li>
                 <span className="when-icon"><CalendarIcon /></span>
-                <span className="when-text">{EVENT.dateLabel}</span>
+                <span className="when-text">{invite.dateLabel}</span>
               </li>
               <li>
                 <span className="when-icon"><PinIcon /></span>
-                <span className="when-text">{EVENT.place}</span>
+                <span className="when-text">{invite.place}</span>
               </li>
               <li>
                 <span className="when-icon"><ClockIcon /></span>
-                <span className="when-text">{EVENT.timeLabel}</span>
+                <span className="when-text">{invite.timeLabel}</span>
               </li>
             </ol>
           </div>

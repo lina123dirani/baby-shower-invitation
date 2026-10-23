@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { EVENT_DATE } from './event'
+import { getInvite } from './event'
 
 function parts(diff) {
   const total = Math.max(0, Math.floor(diff / 1000))
@@ -29,7 +29,7 @@ export default function Countdown() {
     return () => window.clearInterval(id)
   }, [])
 
-  const { days, hours, minutes, seconds } = parts(EVENT_DATE.getTime() - now)
+  const { days, hours, minutes, seconds } = parts(getInvite().date.getTime() - now)
 
   return (
     <div

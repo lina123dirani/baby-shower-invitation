@@ -1,7 +1,9 @@
 import Countdown from './Countdown'
+import { getInvite } from './event'
 import Vinyl from './Vinyl'
 
 export default function Story() {
+  const invite = getInvite()
   return (
     <section id="story" className="story chapter">
       <div className="sheet">
@@ -14,7 +16,7 @@ export default function Story() {
               <span>أشرقت دنيانا بقدوم</span>
             </p>
             <p className="name">لورا</p>
-            <p className="frame-date">16 سبتمبر 2026</p>
+            <p className="frame-date">{invite.dateLabel}</p>
           </div>
           <Vinyl />
         </div>
