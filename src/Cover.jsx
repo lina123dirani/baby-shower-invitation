@@ -18,6 +18,10 @@ export default function Cover({ phase, onOpen }) {
               width="696"
               height="447"
             />
+            <p className="cover-caption">
+              افتحوا الرسالة لنكتمل فرحنا بكم!
+              <small>(بكل الحب، عائلتنا الصغيرة)</small>
+            </p>
           </div>
 
           <button
@@ -28,11 +32,6 @@ export default function Cover({ phase, onOpen }) {
             aria-label="افتحي الرسالة"
           />
         </div>
-
-        <p className="cover-caption">
-          افتحوا الرسالة لنكتمل فرحنا بكم
-          <small>بكل الحب، عائلتنا الصغيرة</small>
-        </p>
       </div>
     </section>
   )
