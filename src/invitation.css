@@ -276,33 +276,43 @@ body {
 }
 
 .story-scene .frame-copy {
-  top: 37%;
-  width: 34%;
+  left: 47%;
+  top: 20.5%;
+  width: 44%;
+  transform: translate(-50%, 0);
 }
 
 .story-scene .frame-poem {
-  font-size: clamp(12px, 3.15cqi, 16px);
-  line-height: 1.55;
-  color: #4a3c38;
+  font-family: var(--serif);
+  font-size: clamp(13px, 3.45cqi, 17.5px);
+  line-height: 1.95;
+  font-weight: 700;
+  color: #503e32;
+}
+
+.story-scene .frame-poem span {
+  white-space: nowrap;
 }
 
 .story-scene .name {
-  margin-top: 4px;
-  font-size: clamp(30px, 8.4cqi, 48px);
-  color: #c4898e;
+  margin-top: 0.28em;
+  font-size: clamp(26px, 6.5cqi, 36px);
+  color: #c9a0a0;
 }
 
 .story-scene .frame-date {
-  margin-top: 2px;
-  font-size: clamp(11px, 2.7cqi, 14px);
-  color: #6d5c56;
+  margin-top: 0.35em;
+  font-family: var(--serif);
+  font-size: clamp(11px, 2.45cqi, 13.5px);
+  font-weight: 700;
+  color: #7a7168;
 }
 
 .story-scene .vinyl {
-  left: 7%;
-  top: 49%;
+  left: 24%;
+  top: 45%;
   bottom: auto;
-  width: 16.5%;
+  width: 15.4%;
 }
 
 .scene-hit {
@@ -319,39 +329,39 @@ body {
 }
 
 .scene-hit.stroller { left: 0; top: 70%; width: 34%; height: 29%; }
-.scene-hit.dress { left: 34%; top: 54%; width: 28%; height: 22%; }
+.scene-hit.dress { left: 34%; top: 54%; width: 30%; height: 32%; }
 .scene-hit.basket { left: 62%; top: 71%; width: 38%; height: 28%; }
 
 .scene-label {
   position: absolute;
   margin: 0;
-  color: #3c322e;
+  color: #4e3c34;
   font-family: var(--serif);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.25;
   text-align: center;
   pointer-events: none;
 }
 
 .scene-hit.stroller .scene-label {
-  top: 46%;
-  left: 10%;
-  width: 74%;
-  font-size: clamp(9px, 2.05cqi, 12px);
+  top: 38%;
+  left: 16%;
+  width: 66%;
+  font-size: clamp(8px, 1.85cqi, 11px);
 }
 
 .scene-hit.dress .scene-label {
-  top: 86%;
-  left: -2%;
-  width: 68%;
-  font-size: clamp(9px, 2cqi, 12px);
+  top: 80%;
+  left: 16%;
+  width: 72%;
+  font-size: clamp(8px, 1.75cqi, 11px);
 }
 
 .scene-hit.basket .scene-label {
-  top: 44%;
-  left: 40%;
-  width: 34%;
-  font-size: clamp(8px, 1.75cqi, 11px);
+  top: 48%;
+  left: 8%;
+  width: 48%;
+  font-size: clamp(7.5px, 1.6cqi, 10px);
 }
 
 .story .countdown {
