@@ -5,8 +5,8 @@ export default function Cover({ phase, onOpen }) {
     <section id="cover" className={`cover chapter ${phase}`}>
       <div className="cover-inner">
         <h1 className="cover-title">
-          <span>حكاية حب صغيرة</span>
-          <span>تبدأ بوصول أميرتنا</span>
+          <span className="cover-rose">حكاية حب صغيرة</span>
+          <span className="cover-ink">تبدأ بوصول أميرتنا</span>
         </h1>
 
         <div className="envelope-stage">

@@ -127,14 +127,16 @@ body {
 }
 
 .cover-title {
-  color: #c4a3a6;
   font-size: clamp(32px, 7.2vw, 46px);
-  line-height: 1.7;
+  line-height: 1.35;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.32em;
   animation: rise-in 0.9s ease both;
 }
+
+.cover-rose { color: #c9959a; }
+.cover-ink { color: #4e382c; }
 
 .envelope-stage {
   position: relative;
@@ -230,15 +232,15 @@ body {
 .cover-caption {
   position: absolute;
   z-index: 2;
-  left: 0;
-  bottom: 2%;
-  width: 56%;
+  left: 1%;
+  bottom: -2%;
+  width: 58%;
   margin: 0;
-  color: #5e4d47;
-  font-family: var(--display);
+  color: #5a463c;
+  font-family: var(--serif);
   font-weight: 700;
-  font-size: clamp(15px, 3.5vw, 20px);
-  line-height: 1.7;
+  font-size: clamp(15px, 3.35vw, 19px);
+  line-height: 1.45;
   text-align: center;
   pointer-events: none;
   animation: rise-in 1s ease 0.22s both;
@@ -246,10 +248,10 @@ body {
 
 .cover-caption small {
   display: block;
-  margin-top: 2px;
-  color: #6f5e57;
-  font-size: 0.72em;
-  font-weight: 700;
+  margin-top: 0.55em;
+  color: #6e6259;
+  font-size: 0.78em;
+  font-weight: 400;
 }
 
 /* ---------- story ---------- */
