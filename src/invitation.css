@@ -688,7 +688,7 @@ body {
 .memories {
   position: relative;
   background: var(--blush);
-  padding: 34px 16px 22px;
+  padding: 36px 16px 28px;
   overflow: hidden;
   text-align: center;
 }
@@ -697,26 +697,27 @@ body {
   position: relative;
   z-index: 1;
   width: min(460px, 100%);
-  margin: 18px auto 0;
-  padding-bottom: 96px;
+  margin: 8px auto 0;
+  padding-bottom: 4px;
 }
 
 .memories-title {
   position: relative;
   z-index: 1;
   color: #fffaf8;
-  font-size: clamp(21px, 5.2vw, 30px);
+  font-size: clamp(17px, 4.3vw, 26px);
   line-height: 1.45;
-  padding-inline: 46px;
+  padding-inline: 18px;
+  white-space: nowrap;
 }
 
 .memory-list {
   position: relative;
   z-index: 1;
-  margin-top: 22px;
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 40px;
 }
 
 .memory-list h3 {
@@ -734,18 +735,20 @@ body {
 .memory-list svg { color: #fff; }
 
 .memory-list p {
-  margin-top: 2px;
+  margin-top: 8px;
   color: var(--ink);
   font-size: clamp(13.5px, 3.4vw, 16px);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .memory-close {
-  margin: 22px auto 0;
-  max-width: 14em;
+  position: relative;
+  z-index: 2;
+  margin: 34px auto 6px;
+  max-width: 18em;
   color: var(--ink);
-  font-size: clamp(16px, 4vw, 21px);
-  line-height: 1.55;
+  font-size: clamp(15px, 3.7vw, 20px);
+  line-height: 1.5;
 }
 
 .mem-flower-top,
