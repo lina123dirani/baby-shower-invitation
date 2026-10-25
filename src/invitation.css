@@ -344,9 +344,9 @@ body {
 }
 
 .scene-hit.stroller .scene-label {
-  top: 68%;
-  left: 16%;
-  width: 66%;
+  top: 48%;
+  left: 12%;
+  width: 72%;
   font-size: clamp(8px, 1.85cqi, 11px);
 }
 
@@ -358,10 +358,12 @@ body {
 }
 
 .scene-hit.basket .scene-label {
-  top: 48%;
-  left: 30%;
-  width: 46%;
-  font-size: clamp(7.5px, 1.6cqi, 10px);
+  top: 42%;
+  left: 36%;
+  width: 42%;
+  font-size: clamp(7.5px, 1.55cqi, 10px);
+  transform: rotate(24deg);
+  transform-origin: center;
 }
 
 .story .countdown {
